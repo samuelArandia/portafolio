@@ -15,7 +15,7 @@ body{
   font-family: 'Josefin Sans', sans-serif;
   transition: all 0.4s;
 }
-
+/* Header  */
 .header {
   padding: 1rem;
   display: flex;
@@ -40,7 +40,6 @@ body{
 
 .header button:hover{
   color:  #8F8EBF;
-
 }
 
 .logo{
@@ -75,10 +74,16 @@ body{
   color: #8F8EBF;
 }
 
-
-
 body.darkmode {
   background-color: #262626;
   color: white;
 }
 
+/* Footer */
+
+.footer{
+  width: 100%;
+  padding: 50px 0px;
+  background-image: url(./assent/background-footer.svg);
+  background-size: cover;
+}
