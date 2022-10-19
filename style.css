@@ -97,7 +97,7 @@ body.darkmode {
   border-radius: 5px;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 860px){
   .header h1 { 
     text-decoration: none;
     font-size: 2rem;
@@ -277,6 +277,7 @@ body.darkmode {
   .perfil{
     width: 40%;
     left: 45%;
+    top: 25%;
   }
 }
 
@@ -354,13 +355,18 @@ footer{
   color: #474073;
 }
 
-@media screen and (max-width: 770px){
+@media screen and (max-width: 770px ){
   footer{
     height: 80vh;
   }
   .container__footer{
     justify-content: center;
   }
-
+}
+  
+@media screen and (max-width: 400px ){
+  footer{
+    height: 100vh;
+  }
 }
   
