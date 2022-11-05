@@ -13,31 +13,31 @@
   </head>
   <body class="darkmode">
     <div id="app"></div>
-    <header class="header">
+    <header class="header" id="inicio">
       <figure class="logo">
         <img src="./assent/logo.png" alt="Logo" class="logo" id="imagen">
       </figure>
-      <h1 href="#">Samuel Arandia</h1>
+      <h1 href="inicio">Samuel Arandia</h1>
         <nav class="nav">
           <ul>
-            <li><a href="about" id="selected">Inicio</a></li>
-            <li><a href="#">Sobre mí</a></li>
-            <li><a href="#">Portafolio</a></li>
-            <li><a href="contacto">Contacto</a></li>
+            <li><a href="#inicio" id="selected">Inicio</a></li>
+            <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#contacto">Contacto</a></li>
             <li><button id="bdark"> <i id="mood" class="fa-regular fa-sun"></i></button></li>
           </ul>
         </nav>
         <i class="fa-solid fa-bars" id="icon_menu"></i>
     </header>
     <main>
-      <div class="container__cover" id="inicio">
+      <div class="container__cover" >
           <div class="cover">
             <div class="text">
               <picture>
                 <img class="perfil" src="./assent/perfil.png" alt="perfil">
               </picture>
               <h2 class="cover__title">Hola, soy Samuel Arandia</h2>
-                <p class="cover__text">Desarrollador de software con un años de experiencia, formado para construir sobre bases y fundamentos. Entre mis destrezas se encuentran enfoque en el logro de los objetivos planteados, capacidad de resolver problemas de forma creativa, trabajo en equipo, comunicación escrita y pensamiento lógico. Busco un puesto desafiante y dinámico para continuar sumando experiencia y conocimientos.</p>
+                <h4 class="cover__text">Desarrollador de software con un año de experiencia, formado para construir sobre bases y fundamentos. Busco un puesto desafiante y dinámico para continuar sumando experiencia y conocimientos.</h4>
                 <input type="button" href="./assent/SamuelArandiaEspanol.pdf"  download="CvSamuelArandia" value="Descargar Cv"></input>
             </div>
             <picture class="svg">
@@ -46,37 +46,70 @@
           </div>
         </div>
       </div>
-      <div class="container__cover" id="proyectos">
+    <aside class="container__cover" id="portafolio">
+        <h1 class="title">Portafolio</h1>
+          <h3 class="subtitulo">Conoce mi portfolio. Estos son algunos de los proyectos en los que he participado como freelance.</h3>
+        <div class="container__cards" id="portafolio">
+          <div class="card">
+                <a href="https://samuelarandia.github.io/curso-practico-javascript/" target="_blank" class="link"></a>
+              <div class="cover__card">
+                  <img src="./assent/atm.png" alt="">
+              </div>
+              <h2>ATM</h2>
+              <p> Arriendo de Herramientas y Maquinaria para el area de construcción</p>
+              <hr>
+              <div class="footer__card">
+                  <h3 class="user__name">A toda makina SPA</h3>
+              </div>
+          </div>
+          <div class="card">
+              <a href="https://samuelarandia.github.io/curso-practico-javascript/" target="_blank" class="link"></a>
+              <div class="cover__card">
+                <img src="./assent/SILL.png" alt="">
+              </div>
+              <h2>SILL</h2>
+              <p>Aplicación para la gestion y control de inventario de equipos tegnologicos</p>
+              <hr>
+              <div class="footer__card">
+                  <h3 class="user__name">Eleva SPA</h3>
+              </div>
+          </div>
+          <div class="card">
+                <a href="https://samuelarandia.github.io/curso-practico-javascript/" target="_blank" class="link"></a>
+              <div class="cover__card">
+                  <img src="./assent/platzi.png" alt="" href="https://samuelarandia.github.io/curso-practico-javascript/" target="_blank">
+              </div>
+              <h2>PLATZI</h2>
+              <p>Calculo de figuras geométricas</p>
+              <hr>
+              <div class="footer__card">
+                  <h3 class="user__name">Escuela de desarrollo web</h3>
+              </div>
+          </div>
+        </div>
+    </aside>
+    <asideclass="container__cover" id="habilidades">
+      <h1 class="title">Habilidades</h1>
         <div class="cover">
           <div class="text">
-            <picture>
-              <img class="perfil" src="./assent/perfil.png" alt="perfil">
-            </picture>
+            <h1>Habilidades Tecnologicas </h1>
+              <img src="./assent/css.png" alt="css" class="logos">
+              <img src="./assent/html.png" alt="html" class="logos">
+              <img src="./assent/js.png" alt="js" class="logos">
+              <img src="./assent/vuejs.png" alt="vuejs" class="logos">
+              <img src="./assent/py.jpg" alt="py" class="logos">
+              <img src="./assent/django.png" alt="django" class="logos">
+              <img src="./assent/sql.png" alt="sql" class="logos">
+              <img src="./assent/git.png" alt="git" class="logos">
+              <img src="./assent/github.png" alt="github" class="logos">
+          </div>
+          <div class="text">
             <h2 class="cover__title">Hola, soy Samuel Arandia</h2>
               <p class="cover__text">Desarrollador de software con un años de experiencia, formado para construir sobre bases y fundamentos. Entre mis destrezas se encuentran enfoque en el logro de los objetivos planteados, capacidad de resolver problemas de forma creativa, trabajo en equipo, comunicación escrita y pensamiento lógico. Busco un puesto desafiante y dinámico para continuar sumando experiencia y conocimientos.</p>
               <input type="button" href="./assent/SamuelArandiaEspanol.pdf"  download="CvSamuelArandia" value="Descargar Cv"></input>
           </div>
-          <picture class="svg">
-            <img src="./assent/Web Developer_Isometric.svg" alt="america">
-          </picture>
         </div>
-      </div>
-    </div>
-    <div class="container__cover" id="inicio">
-      <div class="cover">
-        <div class="text">
-          <picture>
-            <img class="perfil" src="./assent/perfil.png" alt="perfil">
-          </picture>
-          <h2 class="cover__title">Hola, soy Samuel Arandia</h2>
-            <p class="cover__text">Desarrollador de software con un años de experiencia, formado para construir sobre bases y fundamentos. Entre mis destrezas se encuentran enfoque en el logro de los objetivos planteados, capacidad de resolver problemas de forma creativa, trabajo en equipo, comunicación escrita y pensamiento lógico. Busco un puesto desafiante y dinámico para continuar sumando experiencia y conocimientos.</p>
-            <input type="button" href="./assent/SamuelArandiaEspanol.pdf"  download="CvSamuelArandia" value="Descargar Cv"></input>
-        </div>
-        <picture class="svg">
-          <img src="./assent/Web Developer_Isometric.svg" alt="america">
-        </picture>
-      </div>
-    </div>
+    </aside>
   </div>
     </main>
     <footer id="contacto" >
@@ -87,18 +120,18 @@
           </div>
           <h1>Sobre mí</h1>
           <div class="terms">
-            <p>Mi nombre es Samuel Arandia, soy  Técnico en Programación y Análisis de Sistemas </p>
+            <p>Mi nombre es Samuel Arandia, soy  Técnico en Programación y Análisis de Sistemas, titutado en Instituto AIEP y actuamente me encuentro viviendo en la Patagonia.  </p>
           </div>
         </div>  
         <div class="box__footer">
-          <h2>Proyectos</h2>
+          <h2>Portafolio</h2>
           <a href="#">Sill</a>
           <a href="#">Atm</a>
           <a href="#">Platzi</a>
           <a href="#">Yo</a>
         </div>
         <div class="box__footer">
-          <h2>Redes Sociales</h2>
+          <h2>Sigueme</h2>
           <a href="https://www.facebook.com/samuel.arandia" target="_blank"><i class="fa-brands fa-facebook"></i>Facebook</a>
           <a href="https://www.instagram.com/samuel_arandia" target="_blank"><i class="fa-brands fa-instagram"></i> Instagram</a>
           <a href="https://twitter.com/Arandia_samuel" target="_blank"><i class="fa-brands fa-twitter"></i>Twitter</a>
@@ -107,10 +140,10 @@
         </div>
         <div class="box__footer">
           <h2>Menu</h2>
-          <a href="about">Inicio</a>
-          <a href="proyectos">Sobre mí</a>
-          <a href="#">Portafolio</a>
-          <a href="contacto">Contacto</a>
+          <a href="#inicio">Inicio</a>
+          <a href="#portafolio">Portafolio</a>
+          <a href="#habilidades">Habilidades</a>
+          <a href="#contacto">Contacto</a>
         </div>
 
       </div>
