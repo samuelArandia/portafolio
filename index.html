@@ -24,6 +24,7 @@
           <ul>
             <li><a href="#inicio" id="selected">Inicio</a></li>
             <li><a href="#portafolio">Portafolio</a></li>
+            <li><a href="#sobreMi">Sobre mi</a></li>
             <li><a href="#habilidades">Habilidades</a></li>
             <li><a href="#contacto">Contacto</a></li>
             <li><button id="bdark"> <i id="mood" class="fa-regular fa-sun"></i></button></li>
@@ -42,8 +43,8 @@
                 <div class="container__info">
                   <h1>Hola, Soy Samuel Arandia</h1>
                     <h2>Desarrollador de software</h2>
-                      <h4>con un año de experiencia, formado para construir sobre bases y fundamentos. Busco un puesto desafiante y dinámico para continuar sumando experiencia y conocimientos.</h4>
-                        <input type="button" href="./assent/SamuelArandiaEspanol.pdf"  download="CvSamuelArandia" value="Descargar Cv"></input>
+                      <h4>Formado para construir sobre bases y fundamentos. Busco un puesto de trabajo desafiante y dinámico para continuar sumando experiencia y conocimientos.</h4>
+                        <input type="button" onclick="window.location.href='./assent/SamuelArandiaEspanol.pdf';"  download="CvSamuelArandia" value="Descargar Cv" target="_blank"></input>
                 </div>
                 <div class="container__vector">
                     <img src="./assent/perfil.png" alt="perfil">
@@ -101,13 +102,30 @@
 
           <!-- Sobre mi -->
 
-          <section>
+          <section class="container__all" id="sobreMi">
             <h1>Sobre mi</h1>
-          </section>
+            <div class="cover__aboutme">
+              <div class="container__cover">
+                <div class="container__vector2">
+                  <img src="./assent/Web Developer_Monochromatic.svg" alt="perfil">
+                </div>
+                <div class="container__info">
+                    <h3 class="text__aboutme">Mi nombre es Samuel Arandia soy Técnico en análisis y programación de sistemas con un año de experiencia, capacitado para realizar el ciclo de desarrollo de software, incorporando en ello el análisis de requerimientos, diseño, programación, pruebas e implementación de soluciones, asi como tambien, mantención de los mismos.</h3>
+                    <br>
+                    <h3 class="text__aboutme"> Formado para cumplir con los estándares de calidad técnica y requerimientos asignados. Entre mis destrezas se encuentran el pensamiento lógico, trabajo en equipo, comunicación escrita y autodidacta. Busco un puesto desafiante y dinámico para continuar sumando experiencia y conocimientos
+                    </h3>
+                </div>
+              </div>
+              </div>
+            </div>
+          </section>  
+        
+        
         
           <!-- Habilidades -->
           <section id="habilidades">
             <h1>Habilidades tecnológicas</h1>
+            <h3 class="subtitulo">Estas son algunas de las Herramientas que dominio y voy aprendiendo cada ves más.</h3>
             <div class="container__box">
                 <div class="box">
                     <i class="fa-brands fa-html5"></i>
@@ -196,6 +214,7 @@
           <h2>Menu</h2>
           <a href="#inicio">Inicio</a>
           <a href="#portafolio">Portafolio</a>
+          <a href="#sobreMi">Sobre mi</a>
           <a href="#habilidades">Habilidades</a>
           <a href="#contacto">Contacto</a>
         </div>
