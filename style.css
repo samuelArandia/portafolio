@@ -464,8 +464,8 @@ body.darkmode {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
 }
+
 .text__aboutme{
   line-height : 30px;
 
@@ -491,9 +491,12 @@ body.darkmode {
 
 @media screen and (max-width: 920px){
   .container__vector img{
-      width: 500px;
+      width: 0px;
       background-color: #262626;
       z-index: -1;
+  }
+  .text__aboutme{
+    
   }
 }
 
