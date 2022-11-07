@@ -4,15 +4,33 @@
   --secondary-color:  #8F8EBF;
 }
 
+*, *:before, *:after{
+  box-sizing: inherit
+}
+
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
 }
+
 html{
   font-size: 62.5%;
+  scroll-snap-type: y mandatory;
 }
+
+/*scroll- snap */
+#inicio,
+#habilidades,
+#sobreMi,
+#portafolio,
+#contacto{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    transition: all 0.2s;
+}
+
 body{
   font-size: 1.6rem;
   font-family: 'Josefin Sans', sans-serif;
@@ -117,13 +135,17 @@ body.darkmode {
 }
 
 @media screen and (max-width: 900px){
-  .header h1 { 
+  .header h2 { 
     text-decoration: none;
-    font-size: 2rem;
+    font-size: 1.6rem;
     margin-right: 1rem;
   }
   h2, a{
     font-size: 2rem;
+  }
+  
+  h1{
+    font-size: 4rem;
   }
 
   #icon_menu{
@@ -170,7 +192,6 @@ body.darkmode {
 .cover{
   width: 100%;
   height: 100vh;
-  margin-top: 200px;
 }
 
 .container__cover{
@@ -234,7 +255,6 @@ body.darkmode {
 .container__vector img{
   position: absolute;
   border-radius: 10px;
-  bottom: 10px;
   right: 0px;
   width: 450px;
   animation: move_vector 6s ease-in-out infinite;
@@ -256,9 +276,12 @@ body.darkmode {
 
 @media screen and (max-width: 920px){
   .container__vector img{
-      width: 500px;
-      background-color: #262626;
+      width: 400px;
+
       z-index: -1;
+  }
+  .container__info{
+    width: 500px;
   }
 }
 
@@ -266,7 +289,6 @@ body.darkmode {
 
   .container__vector img{
       transform: scale(0);
-
   }
 }
 
@@ -459,7 +481,7 @@ body.darkmode {
 /* Sobre mi */
 .cover__aboutme{ 
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -490,20 +512,22 @@ body.darkmode {
 }
 
 @media screen and (max-width: 920px){
-  .container__vector img{
-      width: 0px;
-      background-color: #262626;
-      z-index: -1;
+  .container__info{
+      width: 100%;
+      margin-top: 50px;
+  }
+  .container__vector2 img{
+    display: none;
+
   }
   .text__aboutme{
-    
+    margin-top: 20px;
   }
 }
 
-@media screen and (max-width: 760px){
+@media screen and (max-width: 370px){
 
   .container__vector img{
-      transform: scale(0);
 
   }
 }
@@ -580,7 +604,8 @@ footer{
   
 @media screen and (max-width: 400px ){
   footer{
-    height: 130vh;
+    height: 120vh;
+    padding: 50px;
   }
 }
   
