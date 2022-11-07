@@ -290,6 +290,13 @@ body.darkmode {
   .container__vector img{
       transform: scale(0);
   }
+  .cover input[type="button"]{
+    padding: 30px 70px;
+    margin-top: 60px;
+    font-weight: 600;
+    font-size: 1.6rem;
+    background: var(--primary-color);
+  }
 }
 
 /* portafolio */
@@ -604,7 +611,7 @@ footer{
   
 @media screen and (max-width: 400px ){
   footer{
-    height: 120vh;
+    height: 130vh;
     padding: 50px;
   }
 }
